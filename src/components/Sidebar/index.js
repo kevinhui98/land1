@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import profilePic from '../../assets/images/profile.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './index.scss'
 import {
     faLinkedin,
     faGithub,
@@ -20,13 +21,13 @@ const Sidebar = () => {
 
     return (
         <div className="nav-bar">
-            <Link
+            {/* <Link
                 className="profile"
                 to="/"
                 onClick={() => setShowNav(false)}>
-                <img src={profilePic} alt="profile" />
-            </Link>
-            <nav className={showNav ? 'mobile-show' : ''}>
+                <img src={profilePic} alt="profile"/>
+            </Link>  */}
+            <nav nav className={showNav ? 'mobile-show' : ''} >
                 <NavLink
                     exact="true"
                     activeclassname="active"
@@ -98,7 +99,7 @@ const Sidebar = () => {
                 color="#ffd700"
                 size="3x"
                 className='hamburger-icon' />
-        </div>
+        </div >
     )
 }
 
