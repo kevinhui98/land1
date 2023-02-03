@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+const API_KEY = process.env.REACT_APP_PUBLIC_KEY;
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -14,20 +15,24 @@ const Contact = () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
+    console.log(API_KEY)
+    // console.log(process.env.REACT_APP_PUBLIC_KEY)
   }, [])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     emailjs
-      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
+      .sendForm("gmail", "contact_form", form.current, API_KEY)
       .then(
-        () => {
+        (result) => {
           alert('Message successfully sent!')
           window.location.reload(false)
+          console.log(result)
         },
-        () => {
+        (err) => {
           alert('Failed to send the message, please try again')
+          console.log(err)
         }
       )
   }
@@ -52,13 +57,13 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
+                  <input placeholder="Name" type="text" name="from_name" required />
                 </li>
                 <li className="half">
                   <input
                     placeholder="Email"
                     type="email"
-                    name="email"
+                    name="user_email"
                     required
                   />
                 </li>
