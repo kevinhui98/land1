@@ -15,8 +15,6 @@ const Contact = () => {
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
-    console.log(API_KEY)
-    // console.log(process.env.REACT_APP_PUBLIC_KEY)
   }, [])
 
   const sendEmail = (e) => {
