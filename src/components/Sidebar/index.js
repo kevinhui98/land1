@@ -21,12 +21,12 @@ const Sidebar = () => {
 
     return (
         <div className="nav-bar">
-            {/* <Link
+            <Link
                 className="profile"
                 to="/"
                 onClick={() => setShowNav(false)}>
-                <img src={profilePic} alt="profile"/>
-            </Link>  */}
+                <img src={profilePic} alt="profile" />
+            </Link>
             <nav nav className={showNav ? 'mobile-show' : ''} >
                 <NavLink
                     exact="true"
