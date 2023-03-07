@@ -8,14 +8,14 @@ const Home = () => {
 
     const nameArray = ['K', 'e', 'v', 'i', 'n']
     const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
-    const infoArray = ['C', 'h', 'e', 'c', 'k', 'o', 'u', 't', ' ', 't', 'h', 'e', ' ', 'o', 't', 'h', 'e', 'r', ' ', 'p', 'a', 'g', 'e', 's', ' ', 'f', 'o', 'r', ' ', 'm', 'o', 'r', 'e', ' ', 'i', 'n', 'f', 'o']
+    const infoArray = ['C', 'h', 'e', 'c', 'k', 'o', 'u', 't', ' ', 't', 'h', 'e', ' ', 'o', 't', 'h', 'e', 'r', ' ', 'p', 'a', 'g', 'e', 's']
     useEffect(() => {
         setTimeout(() => {
             setLetterClass('letter-animate-hover')
-        }, 5000)
+        }, 1000)
         setTimeout(() => {
             setTextClass('text-animate-hover')
-        }, 6100)
+        }, 4900)
     }, [])
     return (
         <div className='container home-page'>
