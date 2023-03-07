@@ -31,21 +31,20 @@ const About = () => {
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
             />
-          </h1>
-          {/* <p>
-            I'm a very ambitious front-end developer looking for a role in an
-            established IT company with the opportunity to work with the latest
-            technologies on challenging and diverse projects.
+          </h1><h2>
+            Graduate of Hunter College of New York. My current goals on top of writing clean code are to generate solutions for daily users and top companies.
+          </h2><p>
+            My current skill set includes:
+          </p><ul>
+            <li>Frontend: Javascript (Proficient), ES6 (Proficient), jQuery (Intermediate), React JS (Proficient)</li>
+            <li>Backend: Python (Intermediate), C# (Intermidate), NodeJs (Intermediate), C++ (Intermediate), Java (Intermediate), Kotlin (Intermediate)</li>
+            <li>APIs: Restful (Intermediate),</li>
+            <li>DB: MySQL (Proficient)</li>
+            <li>Cloud: RDS (Intermediate), S3 (Intermediate), EC2 (Intermediate), IAM (Intermediate)</li>
+            <li>Source Control: Git</li>
+          </ul><p>
+            Outside of building and programming, I enjoy going to the gym and volunteering at an Animal shelter.
           </p>
-          <p align="LEFT">
-            I'm quiet confident, naturally curious, and perpetually working on
-            improving my chops one design problem at a time.
-          </p>
-          <p>
-            If I need to define myself in one sentence that would be a family
-            person, father of a beautiful daughter, a sports fanatic,
-            photography enthusiast, and tech-obsessed!!!
-          </p> */}
         </div>
 
         <div className="stage-cube-cont">
