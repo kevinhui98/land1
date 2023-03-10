@@ -4,8 +4,13 @@ import Layout from './components/layout';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = "kevin's portfolio";
+  }, []
+  );
   return (
     <>
       <Routes>
