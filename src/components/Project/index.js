@@ -1,5 +1,6 @@
 import React from 'react'
 import Loader from 'react-loaders'
+import './index.scss'
 const Project = () => {
     return (
         <>
@@ -26,6 +27,11 @@ const Project = () => {
                             <h2>Bank of React</h2>
                             <p>Bank of React is a simple banking application that allows users to create a profile, log in, and view their balance and transaction history. Users can also make deposits and withdrawals. This application was built using React, React Router, and Axios.</p>
                             <a href='https://kevinhui98.github.io/bank-of-react/' target='_blank' rel='noopener noreferrer'>View Project</a>
+                        </div>
+                        <div className='project'>
+                            <h2>Flixster</h2>
+                            <p>Flixster is an android app created to retrieve the top 20 most popular movies in IMDB. <br />Flixster was implemented in Kotlin using Android studio and Restful API</p>
+                            <a href='https://github.com/kevinhui98/flixster_k' target='_blank' rel='noopener noreferrer'>View on github</a>
                         </div>
                     </div>
                 </div>
