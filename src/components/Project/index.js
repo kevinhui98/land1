@@ -33,6 +33,11 @@ const Project = () => {
                             <p>Flixster is an android app created to retrieve the top 20 most popular movies in IMDB. <br />Flixster was implemented in Kotlin using Android studio and Restful API</p>
                             <a href='https://github.com/kevinhui98/flixster_k' target='_blank' rel='noopener noreferrer'>View on github</a>
                         </div>
+                        <div className='project'>
+                            <h2>parstagram</h2>
+                            <p>parstagram is an android application and its functionality is like a barebone instagram, where the user can like, comment, post, and view posts of your own as well as others.<br /> Parstagram was implemented in java using Android studio, back4app(database), and Restful HTTP API</p>
+                            <a href='https://github.com/kevinhui98/parstagram' target='_blank' rel='noopener noreferrer'>View on github</a>
+                        </div>
                     </div>
                 </div>
             </div>
