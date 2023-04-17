@@ -49,7 +49,10 @@ textarea {
   animation-fill-mode: forwards;
 }
 .about-page{
-  
+  display: flex;
+  flex-direction: row;
+  gap: 30%;
+  align-items: center;
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -105,14 +108,19 @@ textarea {
   }
 
 .text-zone {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
+  // position: absolute;
+  // left: 10%;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // width: 35%;
+  // vertical-align: middle;
+  // display: table-cell;
+  // max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 40%;
 }
 
 .text-animate-hover {
@@ -130,8 +138,17 @@ h2{
   color: white;
 }
 }
+@media screen and (max-width: 1200px) {
+  .about-page{
+    flex-direction: column;
+    align-content: center;
+    // gap: 10%;
+    // justify-content: center;
+    gap: 70% 0;
+  }
+}
 .contact-page {
-  
+  // margin-top: 20px;
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -141,6 +158,7 @@ h2{
     position: relative;
     margin-bottom: 40px;
     left: -10px;
+
 
     &:before {
       content: '<h1>';
@@ -187,15 +205,19 @@ h2{
   }
 
 .text-zone {
-  position: absolute;
-  left: 10%;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 35%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
+  // position: absolute;
+  // left: 10%;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // width: 35%;
+  // vertical-align: middle;
+  // display: table-cell;
+  // max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
 }
+margin-top: 5%;
 
 .text-animate-hover {
   &:hover {
@@ -260,14 +282,18 @@ h2{
   }
 
 .text-zone {
-  position: absolute;
-  left: 10%;
-  top: 40%;
-  transform: translateY(-50%);
-  width: 75%;
-  vertical-align: middle;
-  display: table-cell;
-  max-height: 90%;
+  // position: absolute;
+  // left: 10%;
+  // top: 40%;
+  // transform: translateY(-50%);
+  // width: 75%;
+  // vertical-align: middle;
+  // display: table-cell;
+  // max-height: 90%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
 .text-animate-hover {
