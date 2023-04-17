@@ -9,13 +9,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #022c43;
-  overflow: hidden;
-  display: block;
+  /* overflow: hidden; */
+  /* display: block; */
 }
 
 .dashboard {
-  margin-top: 200px;
-  margin-left: 200px;
+  /* margin-top: 200px;
+  margin-left: 200px; */
 }
 
 @media screen and (max-width: 1200px) {

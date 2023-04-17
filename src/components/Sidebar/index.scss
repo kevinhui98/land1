@@ -2,13 +2,14 @@
   background: #181818;
   width: 75px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   // top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 3;
   min-height: 500px;
+  box-shadow: 10px 0 5px -2px gray;
 
   .profile{
     display: block;
