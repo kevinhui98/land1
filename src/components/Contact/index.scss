@@ -1,6 +1,6 @@
 .contact-form {
-  width: 100%;
-  margin-top: 20px;
+  width: 50%;
+  // margin-top: 20px;
   // padding-left:5vw;
 
   ul {
@@ -32,7 +32,17 @@
       }
     }
   }
-
+  // input[name='message']{
+  //   width: 50%;
+  //   border: 0;
+  //   background: #737111;
+  //   height: 50px;
+  //   font-size: 16px;
+  //   color: #fff;
+  //   padding: 0 20px;
+  //   box-sizing: border-box;
+  //   min-height: 150px;
+  // }
   input[type='text'],
   input[type='email'] {
     width: 100%;
@@ -49,7 +59,7 @@
     width: 100%;
     border: 0;
     background: #115173;
-    height: 50px;
+    height: 35vh;
     font-size: 16px;
     color: #fff;
     padding: 20px;
@@ -59,7 +69,7 @@
 
   .flat-button {
     color: #ffd700;
-    font-size: 11px;
+    font-size: 15px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
@@ -70,7 +80,6 @@
     text-transform: uppercase;
     float: right;
     text-align: center;
-    margin-right: 10px;
   }
 }
 
