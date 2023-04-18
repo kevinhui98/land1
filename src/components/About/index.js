@@ -36,12 +36,17 @@ const About = () => {
           </h2><p>
             My current skill set includes:
           </p><ul>
-            <li>Frontend: Javascript (Proficient), ES6 (Proficient), jQuery (Intermediate), React JS (Proficient)</li>
+            {/* <li>Frontend: Javascript (Proficient), ES6 (Proficient), jQuery (Intermediate), React JS (Proficient)</li>
             <li>Backend: Python (Intermediate), C# (Intermidate), NodeJs (Intermediate), C++ (Intermediate), Java (Intermediate), Kotlin (Intermediate)</li>
             <li>APIs: Restful (Intermediate),</li>
             <li>DB: MySQL (Proficient)</li>
-            <li>Cloud: RDS (Intermediate), S3 (Intermediate), EC2 (Intermediate), IAM (Intermediate)</li>
-            <li>Source Control: Git</li>
+            <li>Cloud: RDS (Intermediate), S3 (Intermediate), EC2 (Intermediate), IAM (Intermediate)</li> */}
+            {/* <li>Source Control: Git</li> */}
+            <li>Languages: C/C++, SQL (MySQL), JavaScript, HTML/CSS, Kotlin, Java, Python</li>
+            <li>Frameworks: React, Node.js, Express.js, Restful API</li>
+            <li>Developer Tools: Git, Google Cloud Platform, VS Code, Visual Studio, Android Studio, AWS, IntelliJ, Figma</li>
+            <li>Libraries: pandas, NumPy, Matplotlib, Bootstrap,</li>
+
           </ul><p>
             Outside of building and programming, I enjoy going to the gym and volunteering at an Animal shelter.
           </p>
