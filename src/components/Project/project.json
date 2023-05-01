@@ -11,7 +11,7 @@
     },
     "2": {
         "title": "Grid Maker",
-        "description": ">Grid Maker is a simple application that allows users to create a grid of any size. Users can also change the color of each cell.<br /> This application works with a default value of 0 rows and columns so inorder to create a row you will have to create the row then create the column",
+        "description": "Grid Maker is a simple application that allows users to create a grid of any size. Users can also change the color of each cell.<br /> This application works with a default value of 0 rows and columns so inorder to create a row you will have to create the row then create the column",
         "link": "https://kevinhui98.github.io/grid-maker-starter-code/"
     },
     "3": {

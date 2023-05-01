@@ -10,24 +10,6 @@ const Project = () => {
         setTimeout(() => {
             console.log(project)
             setLoading(false)
-            // Object.keys(project).map((item) => {
-            //     let project_index = JSON.parse(JSON.stringify(project[item]))
-            //     return (
-            //         <div className='project'>
-            //             <a href={project_index.link} target='_blank' rel='noopener noreferrer'>
-            //                 <h2>{project_index.title}</h2>
-            //                 <ul>
-            //                     <li>
-            //                         <p>{project_index.description}</p>
-            //                     </li>
-            //                     <li>
-            //                         <p>View Project on Github</p>
-            //                     </li>
-            //                 </ul>
-            //             </a>
-            //         </div>
-            //     )
-            // })
         }, 1000)
     }, [])
     const [letterClass, setLetterClass] = React.useState('text-animate')
@@ -49,28 +31,6 @@ const Project = () => {
                             idx={15}
                         /></h1>
                     <div id='project-list'>
-                        {/* {
-                                setTimeout(() => {
-                                    Object.keys(project).map((item) => {
-                                        let project_index = JSON.parse(JSON.stringify(project[item]))
-                                        return (
-                                            <div className='project'>
-                                                <a href={project_index.link} target='_blank' rel='noopener noreferrer'>
-                                                    <h2>{project_index.title}</h2>
-                                                    <ul>
-                                                        <li>
-                                                            <p>{project_index.description}</p>
-                                                        </li>
-                                                        <li>
-                                                            <p>View Project on Github</p>
-                                                        </li>
-                                                    </ul>
-                                                </a>
-                                            </div>
-                                        )
-                                    })
-                                }, 4000)
-                            } */}
                         {
                             Object.keys(project).map((item) => {
                                 let project_index = JSON.parse(JSON.stringify(project[item]))
@@ -81,9 +41,6 @@ const Project = () => {
                                             <ul>
                                                 <li>
                                                     <p>{project_index.description}</p>
-                                                </li>
-                                                <li>
-                                                    <p>View Project on Github</p>
                                                 </li>
                                             </ul>
                                         </a>
