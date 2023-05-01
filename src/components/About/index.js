@@ -12,6 +12,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 import about from './about.json'
+import SelectSkill from './SelectSkill'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,7 +22,12 @@ const About = () => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
-
+  let skills = Object.keys(about)
+  const [skill, setSkill] = useState(skills[0])
+  const onChange = (e) => {
+    const value = e.target.value;
+    setSkill(value);
+  }
   return (
     <>
       <div className="container about-page">
@@ -34,41 +40,34 @@ const About = () => {
             />
           </h1><h2>
             Graduate of Hunter College of New York. My current goals on top of writing clean code are to generate solutions for daily users and top companies.
-          </h2><p>
+          </h2><h2>
             My current skill set includes:
-            {/* <li>Frontend: Javascript (Proficient), ES6 (Proficient), jQuery (Intermediate), React JS (Proficient)</li>
-            <li>Backend: Python (Intermediate), C# (Intermidate), NodeJs (Intermediate), C++ (Intermediate), Java (Intermediate), Kotlin (Intermediate)</li>
-            <li>APIs: Restful (Intermediate),</li>
-            <li>DB: MySQL (Proficient)</li>
-            <li>Cloud: RDS (Intermediate), S3 (Intermediate), EC2 (Intermediate), IAM (Intermediate)</li> */}
-            {/* <li>Source Control: Git</li> */}
-          </p>
-          {/* <ul>
-            <li>Languages: C/C++, SQL (MySQL), JavaScript, HTML/CSS, Kotlin, Java, Python</li>
-            <li>Frameworks: React, Node.js, Express.js, Restful API</li>
-            <li>Developer Tools: Git, Google Cloud Platform, VS Code, Visual Studio, Android Studio, AWS, IntelliJ, Figma</li>
-            <li>Libraries: pandas, NumPy, Matplotlib, Bootstrap</li>
-
-          </ul> */}
+          </h2>
+          <br />
+          <SelectSkill
+            skill={skills}
+            onChange={onChange}
+          />
           {Object.keys(about).map((item, index) => {
             let about_index = JSON.parse(JSON.stringify(about[item]))
-            console.log(about_index)
-            return (
-              <ul key={index} className={index}>
-                <h1>{item}</h1>
-                {Object.keys(about_index).map((skill_index) => {
-                  let skill = JSON.parse(JSON.stringify(about_index[skill_index]))
-                  console.log(skill)
-                  return (
-                    <>
-                      <li>{skill.name}</li>
-                      <li>{skill.level}</li>
-                    </>
-                  )
-                })
-                }
-              </ul>
-            )
+            if (item !== skill) return null
+            else {
+              return (
+                <ul key={index} className={index}>
+                  {/* <h2>{item}</h2> */}
+                  {Object.keys(about_index).map((skill_index) => {
+                    let skill = JSON.parse(JSON.stringify(about_index[skill_index]))
+                    return (
+                      <>
+                        <li>{skill.name}</li>
+                        <li>{skill.level}</li>
+                      </>
+                    )
+                  })
+                  }
+                </ul>
+              )
+            }
           })}
           <p>
             Outside of building and programming, I enjoy going to the gym and volunteering at an Animal shelter.
