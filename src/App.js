@@ -6,7 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Project from './components/Project';
 import { useEffect } from 'react';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   useEffect(() => {
     document.title = "kevin's portfolio";
