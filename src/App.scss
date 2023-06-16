@@ -55,7 +55,7 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 30%;
-  align-items: center;
+  
   
   h1 {
     font-size: 53px;
@@ -123,7 +123,8 @@ textarea {
   display: flex;
   flex-direction: column;
   // margin-left: 10%;
-  // margin-top: 5%;
+  margin-top: 5%;
+  margin-left: 10%;
   width: 50%;
 }
 
@@ -145,10 +146,16 @@ h2{
 @media screen and (max-width: 1200px) {
   .about-page{
     flex-direction: column;
-    align-content: center;
     // gap: 10%;
     // justify-content: center;
     gap: 70% 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-page{
+    // gap: 10%;
+    // justify-content: center;
+    align-items: center;
   }
 }
 .contact-page {
@@ -230,7 +237,7 @@ margin-top: 5%;
 }
 }
 .project-page{
-  
+  display:flex;
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -296,8 +303,8 @@ margin-top: 5%;
   // max-height: 90%;
   display: flex;
   flex-direction: column;
-  // margin-left: 10%;
   margin-top: 5%;
+  margin-left: 10%;
 }
 
 .text-animate-hover {

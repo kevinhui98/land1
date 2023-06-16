@@ -21,7 +21,7 @@ const Project = () => {
     }, [])
 
     return (
-        <div className="container project-page">
+        <div className="container-fluid project-page">
             {loading ? <Loader type="pacman" /> :
                 <div className="text-zone">
                     <h1>
@@ -36,14 +36,15 @@ const Project = () => {
                                 let project_index = JSON.parse(JSON.stringify(project[item]))
                                 return (
                                     <div className='project'>
-                                        <a href={project_index.link} target='_blank' rel='noopener noreferrer'>
-                                            <h2>{project_index.title}</h2>
-                                            <ul>
-                                                <li>
-                                                    <p>{project_index.description}</p>
-                                                </li>
-                                            </ul>
-                                        </a>
+                                        <h2>{project_index.title}</h2>
+                                        <ul>
+                                            <li>
+                                                <p>{project_index.description}</p>
+                                                <a href={project_index.link} target='_blank' rel='noopener noreferrer'>
+                                                    view project
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 )
                             })
