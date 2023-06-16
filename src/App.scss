@@ -160,6 +160,7 @@ h2{
 }
 .contact-page {
   // margin-top: 20px;
+  display: inline-table;
   h1 {
     font-size: 53px;
     font-family: 'Coolvetica';
@@ -226,9 +227,11 @@ h2{
   // max-height: 90%;
   display: flex;
   flex-direction: column;
-  // margin-left: 10%;
+  
+  margin-left: 10%;
+  margin-top: 5%;
 }
-margin-top: 5%;
+// margin-top: 5%;
 
 .text-animate-hover {
   &:hover {
