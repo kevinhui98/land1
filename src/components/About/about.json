@@ -1,98 +1,31 @@
 {
     "Languages": {
-        "0": {
-            "name": "C/C++",
-            "level": "60"
-        },
-        "1": {
-            "name": "SQL (MySQL)",
-            "level": "70"
-        },
-        "2": {
-            "name": "JavaScript",
-            "level": "90"
-        },
-        "3": {
-            "name": "HTML/CSS",
-            "level": "95"
-        },
-        "4": {
-            "name": "Kotlin",
-            "level": "80"
-        },
-        "5": {
-            "name": "Java",
-            "level": "75"
-        },
-        "6": {
-            "name": "Python",
-            "level": "80"
-        }
-
+        "C/C++": "60",
+        "SQL (MySQL)": "70",
+        "JavaScript": "90",
+        "HTML/CSS": "95",
+        "Kotlin": "80",
+        "Java": "75",
+        "Python": "80"
     },
     "Frameworks": {
-        "0": {
-            "name": "React",
-            "level": "85"
-        },
-        "1": {
-            "name": "Node.js",
-            "level": "65"
-        },
-        "2": {
-            "name": "Express.js",
-            "level": "60"
-        },
-        "3": {
-            "name": "Restful API",
-            "level": "80"
-        }
-
+        "React": "85",
+        "Node.js": "65",
+        "Express.js": "60",
+        "Restful API": "80"
     },
     "Developer Tools": {
-        "0": {
-            "name": "Git",
-            "level": "90"
-        },
-        "1": {
-            "name": "VS Code",
-            "level": "90"
-        },
-        "2": {
-            "name": "Android Studio",
-            "level": "90"
-        },
-        "3": {
-            "name": "AWS",
-            "level": "80"
-        },
-        "4": {
-            "name": "IntelliJ",
-            "level": "70"
-        },
-        "5": {
-            "name": "Figma",
-            "level": "75"
-        }
-
+        "Git": "90",
+        "VS Code": "90",
+        "Android Studio": "90",
+        "AWS": "80",
+        "IntelliJ": "70",
+        "Figma": "75"
     },
     "Libraries": {
-        "0": {
-            "name": "pandas",
-            "level": "70"
-        },
-        "1": {
-            "name": "NumPy",
-            "level": "70"
-        },
-        "2": {
-            "name": "Matplotlib",
-            "level": "70"
-        },
-        "3": {
-            "name": "Bootstrap",
-            "level": "80"
-        }
-
+        "pandas": "70",
+        "NumPy": "70",
+        "Matplotlib": "70",
+        "Bootstrap": "80"
     }
 }
