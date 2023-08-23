@@ -107,6 +107,17 @@
     gap: 20px;
     color: white;
   }
+  @media screen and (max-width: 1400px){
+    .skill{
+      grid-template-columns: repeat(2, 2fr);
+    }
+  }
+  @media screen and (max-width: 1000px){
+    .skill{
+      grid-template-columns: repeat(1, 2fr);
+    }
+  }
+
   .recentProjects{
     // display: grid;
     color: #ffd700;
