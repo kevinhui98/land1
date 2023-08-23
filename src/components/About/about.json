@@ -1,12 +1,12 @@
 {
     "Languages": {
-        "C/C++": "60",
-        "SQL (MySQL)": "70",
-        "JavaScript": "90",
         "HTML/CSS": "95",
+        "JavaScript": "90",
         "Kotlin": "80",
+        "Python": "80",
+        "SQL (MySQL)": "75",
         "Java": "75",
-        "Python": "80"
+        "C/C++": "60"
     },
     "Frameworks": {
         "React": "85",
