@@ -25,7 +25,8 @@ const Contact = () => {
       .then(
         (result) => {
           alert('Message successfully sent!')
-          window.location.reload(false)
+          // window.location.reload(false)
+          window.location.href = 'https://kevinhui98.github.io/'
           console.log(result)
         },
         (err) => {
