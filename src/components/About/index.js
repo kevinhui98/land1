@@ -28,6 +28,18 @@ const About = () => {
     const value = e.target.value;
     setSkill(value);
   }
+  let skillList = []
+  skills.forEach((element) => {
+    for (let name in about[element]) {
+      // console.log(i, about[element][i])
+      skillList.push([name, about[element][name]])
+    }
+    // skillList.push(about_index)
+  })
+  // console.log("skills", skillList)
+  // skills.forEach((element) => {
+  //   console.log(element[1])
+  // })
   return (
     <>
       <div className="container-fluid about-page">
@@ -44,31 +56,47 @@ const About = () => {
             My current skill set includes:
           </h2>
           <br />
-          <SelectSkill
+          {/* <SelectSkill
             skill={skills}
             onChange={onChange}
-          />
-          {Object.keys(about).map((item, index) => {
-            let about_index = JSON.parse(JSON.stringify(about[item]))
-            if (item !== skill) return null
-            else {
-              return (
-                <ul key={index} className={index}>
-                  {/* <h2>{item}</h2> */}
-                  {Object.keys(about_index).map((skill_index) => {
-                    let skill = JSON.parse(JSON.stringify(about_index[skill_index]))
+          /> */}
+          {/* {Object.keys(about).map((item, index) => {
+            let about_index = JSON.parse(JSON.stringify(about[skill]))
+            console.log(Object.keys(about[skill]))
+            console.log("skill", item)
+              console.log("about_index", about_index)
+            let selectedSkill = Object.keys(about[skill])
+            return (
+              <ul key={index} className={index}>
+                {Object.keys(about_index).map((skill_index) => {
+                    console.log("skill_index", skill_index)
+                    let selectedSkill = skill_index
                     return (
-                      <>
-                        <li>{skill.name}</li>
-                        <li>{skill.level}</li>
-                      </>
+                      <li>{skill_index} : {about_index[skill_index]}</li>
                     )
                   })
                   }
-                </ul>
+
+
+              </ul>
+            )
+          }
+          )} */}
+          <ul>
+            {skillList.map(item => {
+              console.log("item", item)
+              return (
+                <li >
+                  {item[0]} : {item[1]}
+                  {/* <div className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                          <div className="progress-bar progress-bar-striped" style={{ width: `${item[1]}` }}>{item[1]}</div>
+                        </div> */}
+                </li>
               )
             }
-          })}
+            )}
+          </ul>
+
           <p>
             Outside of building and programming, I enjoy going to the gym and volunteering at an Animal shelter.
           </p>
@@ -96,7 +124,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div >
       <Loader type="pacman" />
     </>
   )
