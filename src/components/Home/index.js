@@ -7,7 +7,7 @@ import project from '../Project/project.json'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('letter-animate')
     // const [textClass, setTextClass] = useState('text-animate')
-    const [transitionClass, setTransitionClass] = useState({ transform: 'translateY(0)' })
+    const [transitionClass, setTransitionClass] = useState({ transform: 'translateY(25%)' })
     const [opacity, setOpacity] = useState({
         opacity: 0,
         transition: "opacity .25s ease-in-out"
@@ -22,7 +22,7 @@ const Home = () => {
         setTimeout(() => {
             // setTextClass('text-animate-hover')
             setTransitionClass({
-                transform: 'translateY(-30%)',
+                transform: 'translateY(-15%)',
                 transition: 'transform 2s ease-in-out'
             })
 
