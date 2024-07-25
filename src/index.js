@@ -5,17 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import ReactGA from "react-ga4";
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <SpeedInsights />
     </BrowserRouter>
   </React.StrictMode>
 );
 //Initialize GA4
-ReactGA.initialize("G-CPCEV2ZLE9");
+ReactGA.initialize("G-KZTQRF8N6V");
 const SendAnalytics = () => {
   ReactGA.send({
     hitType: "pageview",
